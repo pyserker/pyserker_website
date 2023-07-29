@@ -1,6 +1,10 @@
+html {
+  height: 100%
+}
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .header {
@@ -53,8 +57,17 @@ body {
     text-align: center;
     width: 20vh;
   }
-  .header-logo img {
-    width: 20vh;
+
+  .py-logo {
+    box-sizing: border-box;
+    display: block;
+    height: vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 
+    position: relative;
+    text-align: center;
+    width: 12vh;
   }
 
 .full-hero {
@@ -63,6 +76,24 @@ body {
     box-sizing: border-box;
     height: 100vh;
     padding-top: 10vh;
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 92px;
+  left: 30px;
+  
+}
+.image2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  
+  
 }
 
 .hero-home {
@@ -85,3 +116,26 @@ body {
     text-shadow: 2px 2px 4px #444444; 
     font-size: 3vw;
 }
+
+
+.fade-in-image { animation: fadeIn 5s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 0;}
+  100% { opacity: 1; }
+}
+
+.logospin {
+  animation: logospin 4s;
+}
+
+@keyframes logospin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
