@@ -143,4 +143,16 @@ body {
   .image2 {
     position: absolute;
     top: 2.75vh;
+
+  .py-logo {
+    box-sizing: border-box;
+    display: block;
+    height: vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 
+    position: absolute;
+    text-align: center;
+    width: 13vh;
+  }
 }
