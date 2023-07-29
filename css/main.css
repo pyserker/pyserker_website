@@ -67,7 +67,7 @@ body {
     margin-top: 
     position: absolute;
     text-align: center;
-    width: 12vh;
+    width: 13vh;
   }
 
 .full-hero {
@@ -90,7 +90,7 @@ body {
 }
 .image2 {
   position: absolute;
-  top: 2.5vh;
+  top: 2.75vh;
   
   
   
@@ -142,5 +142,5 @@ body {
 @media  screen and (max-width: 480px) {
   .image2 {
     position: absolute;
-    top: 2.5vh;
+    top: 2.75vh;
 }
