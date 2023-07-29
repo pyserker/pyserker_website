@@ -139,3 +139,8 @@ body {
   }
 }
 
+@media  screen and (max-width: 480px) {
+  .image2 {
+    position: absolute;
+    top: 2vh;
+}
