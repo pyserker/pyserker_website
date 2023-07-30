@@ -144,7 +144,8 @@ body {
 .container {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: minmax(2em,1fr) repeat(6,minmax(auto,10em))minmax(2em,1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: minmax(2em,1fr) repeat(auto-fit,minmax(auto,10em))minmax(2em,1fr);
 }
 .feature_content {
   background-color: #00040790;
@@ -157,11 +158,17 @@ body {
 
 .feature_content-1 {
   align-self: start;
-  grid-column: 3 / 6;
+  /*(
+  grid-row: 1/1;
+  */
+  grid-column: 2 / 5;
 }
 .feature_content-2 {
   align-self: end;
-  grid-column: 4 / 7;
+  
+  grid-row: 2/2;
+  
+  grid-column: 2 / 6;
 }
 
 @media  screen and (max-width: 480px) {
