@@ -138,6 +138,31 @@ body {
     transform: rotate(360deg);
   }
 }
+.feature {
+  min-height: 70vh;
+}
+.container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(2em,1fr) repeat(6,minmax(auto,10em))minmax(2em,1fr);
+}
+.feature_content {
+  background-color: #00040790;
+  border-radius: 10px;
+  color: #c5be80;
+  grid-row-start: 1;
+  margin: 4em 0;
+  padding: 2em 2em;
+}
+
+.feature_content-1 {
+  align-self: start;
+  grid-column: 3 / 6;
+}
+.feature_content-2 {
+  align-self: end;
+  grid-column: 4 / 7;
+}
 
 @media  screen and (max-width: 480px) {
   .image2 {
