@@ -145,7 +145,6 @@ body {
 .container {
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: repeat(auto-fit, 1fr);
   grid-template-columns: minmax(2em,1fr) repeat(auto-fit,minmax(auto,10em))minmax(2em,1fr);
 }
 .feature_content {
@@ -159,20 +158,15 @@ body {
 
 .feature_content-1 {
   align-self: start;
-  /*(
-  grid-row: 1/1;
-  */
   grid-column: 2 / 5;
 }
 .feature_content-2 {
   align-self: end;
-  
-  grid-row: 2/2;
-  
-  grid-column: 2 / 6;
+  grid-row-start: 3;
+  grid-column: 3 / 6;
 }
 
-@media  screen and (max-width: 480px) {
+@media  screen and (max-width: 704px) {
   .image2 {
     position: absolute;
     top: 2.75vh;
@@ -188,4 +182,5 @@ body {
     text-align: center;
     width: 12vh;
   }
+
 }
