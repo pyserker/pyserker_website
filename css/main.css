@@ -14,7 +14,7 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: 20rem 1fr 20rem;
+    grid-template-columns: 24rem 1fr 24rem;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header header nav"
